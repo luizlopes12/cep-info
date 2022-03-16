@@ -1,0 +1,5 @@
+.cepInput::-webkit-outer-spin-button,
+.cepInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
