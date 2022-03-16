@@ -2,13 +2,15 @@ $(document).ready(function () {
   let form = $("#cepForm");
   let cep = $("#cepInput");
   let message = $("#message");
+  let loadingAnimation = $('#loading')
   let messageContent = "";
-
+  loadingAnimation.hide()
   // Ao fazer submit no form, executa a verificação do CEP
 
   form.submit(function (e) {
     e.preventDefault();
     if (cep.val().length === 8) {
+      loadingAnimation.show()
       $.ajax({
         url: `http://viacep.com.br/ws/${cep.val()}/json/`,
       }).done(function (data) {
