@@ -19,7 +19,7 @@ $(document).ready(function () {
           alert("CEP inválido");
         } else {
 
-          // Captando os dados e formatando eles em uma string
+          // Captando os dados especificos e formatando eles em uma string
           // Alguns dos CEP não possuem rua nem bairro, também ocorre uma verificação
 
           const { bairro, logradouro: rua, localidade: cidade, uf, cep } = data;
