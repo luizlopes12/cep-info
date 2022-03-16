@@ -1,5 +1,59 @@
-.cepInput::-webkit-outer-spin-button,
-.cepInput::-webkit-inner-spin-button {
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.container h2 {
+  margin: 10px 0 5px;
+}
+.container hr {
+  border: 1px solid #636363;
+}
+
+.container .cepForm {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.container .cepInput {
+  width: 180px;
+  height: 35px;
+  font-size: 15px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-right: none;
+}
+
+.container .cepInput::-webkit-outer-spin-button,
+.container .cepInput::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.container .cepBtn {
+  background: #c5c5c5;
+  width: 110px;
+  height: 35px;
+  border: 1px solid #cccccc;
+  border-left: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.container .cepBtn:hover {
+  background: #d3d3d3;
+}
+
+.container .message{
+    margin: 10px 0;
+    color: #ff4444;
+    font-size: 18px;
 }
