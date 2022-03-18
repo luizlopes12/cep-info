@@ -12,7 +12,7 @@ $(document).ready(function () {
     if (cep.val().length === 8) {
       loadingAnimation.show()
       $.ajax({
-        url: `http://viacep.com.br/ws/${cep.val()}/json/`,
+        url: `https://viacep.com.br/ws/${cep.val()}/json/`,
       }).done(function (data) {
 
         // Verificando se o CEP existe
